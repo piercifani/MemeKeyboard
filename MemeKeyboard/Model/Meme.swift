@@ -9,9 +9,7 @@
 import CoreData
 
 class Meme: NSManagedObject {
-
     @NSManaged var title : NSString
     @NSManaged var url : NSString
     @NSManaged var tags : NSSet
-
 }

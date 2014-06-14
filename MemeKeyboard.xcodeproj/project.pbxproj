@@ -17,6 +17,7 @@
 		EBD8F312194B595F00EBCCBE /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD8F311194B595F00EBCCBE /* Meme.swift */; };
 		EBD8F314194B5A4300EBCCBE /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD8F313194B5A4300EBCCBE /* Tag.swift */; };
 		EBD8F323194C598400EBCCBE /* PCCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD8F322194C598400EBCCBE /* PCCoreDataStack.m */; };
+		EBD8F329194C70CF00EBCCBE /* PCCoreDataStack+Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD8F328194C70CF00EBCCBE /* PCCoreDataStack+Meme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB144B14194C873B00855300 /* MemePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MemePlayground.playground; sourceTree = "<group>"; };
 		EBD8F2E5194B55D300EBCCBE /* MemeKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD8F2E9194B55D300EBCCBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBD8F2EA194B55D300EBCCBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 		EBD8F321194C598400EBCCBE /* PCCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCoreDataStack.h; sourceTree = "<group>"; };
 		EBD8F322194C598400EBCCBE /* PCCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCoreDataStack.m; sourceTree = "<group>"; };
 		EBD8F326194C5AF000EBCCBE /* MemeKeyboard-BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MemeKeyboard-BridgeHeader.h"; sourceTree = "<group>"; };
+		EBD8F328194C70CF00EBCCBE /* PCCoreDataStack+Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PCCoreDataStack+Meme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,7 @@
 			children = (
 				EBD8F2EA194B55D300EBCCBE /* AppDelegate.swift */,
 				EBD8F326194C5AF000EBCCBE /* MemeKeyboard-BridgeHeader.h */,
+				EB144B14194C873B00855300 /* MemePlayground.playground */,
 				EBD8F327194C5B4C00EBCCBE /* ViewControllers */,
 				EBD8F30D194B57B200EBCCBE /* Model */,
 				EBD8F2F3194B55D300EBCCBE /* Images.xcassets */,
@@ -130,6 +134,7 @@
 				EBD8F30E194B57D600EBCCBE /* MemeKeyboard.xcdatamodeld */,
 				EBD8F311194B595F00EBCCBE /* Meme.swift */,
 				EBD8F313194B5A4300EBCCBE /* Tag.swift */,
+				EBD8F328194C70CF00EBCCBE /* PCCoreDataStack+Meme.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD8F329194C70CF00EBCCBE /* PCCoreDataStack+Meme.swift in Sources */,
 				EBD8F314194B5A4300EBCCBE /* Tag.swift in Sources */,
 				EBD8F30C194B565700EBCCBE /* TagListViewController.swift in Sources */,
 				EBD8F30A194B562B00EBCCBE /* MemeListViewController.swift in Sources */,

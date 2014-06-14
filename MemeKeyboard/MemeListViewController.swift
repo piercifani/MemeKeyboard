@@ -23,6 +23,8 @@ class MemeListViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let memesFRC = PCCoreDataStack.sharedInstance().memesFRC()
     }
 
     override func didReceiveMemoryWarning() {
