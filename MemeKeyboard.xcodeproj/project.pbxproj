@@ -46,6 +46,7 @@
 		EBD8F320194C598400EBCCBE /* PCCoreDataStack+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PCCoreDataStack+Private.h"; sourceTree = "<group>"; };
 		EBD8F321194C598400EBCCBE /* PCCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCoreDataStack.h; sourceTree = "<group>"; };
 		EBD8F322194C598400EBCCBE /* PCCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCoreDataStack.m; sourceTree = "<group>"; };
+		EBD8F326194C5AF000EBCCBE /* MemeKeyboard-BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MemeKeyboard-BridgeHeader.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +88,9 @@
 		EBD8F2E7194B55D300EBCCBE /* MemeKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				EBD8F309194B562B00EBCCBE /* MemeListViewController.swift */,
-				EBD8F30B194B565700EBCCBE /* TagListViewController.swift */,
 				EBD8F2EA194B55D300EBCCBE /* AppDelegate.swift */,
-				EBD8F2F0194B55D300EBCCBE /* Main.storyboard */,
+				EBD8F326194C5AF000EBCCBE /* MemeKeyboard-BridgeHeader.h */,
+				EBD8F327194C5B4C00EBCCBE /* ViewControllers */,
 				EBD8F30D194B57B200EBCCBE /* Model */,
 				EBD8F2F3194B55D300EBCCBE /* Images.xcassets */,
 				EBD8F315194B5A9000EBCCBE /* Vendor */,
@@ -150,6 +150,16 @@
 				EBD8F322194C598400EBCCBE /* PCCoreDataStack.m */,
 			);
 			path = PCCoreDataStack;
+			sourceTree = "<group>";
+		};
+		EBD8F327194C5B4C00EBCCBE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBD8F2F0194B55D300EBCCBE /* Main.storyboard */,
+				EBD8F309194B562B00EBCCBE /* MemeListViewController.swift */,
+				EBD8F30B194B565700EBCCBE /* TagListViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +388,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MemeKeyboard/MemeKeyboard-BridgeHeader.h";
 			};
 			name = Debug;
 		};
@@ -391,6 +402,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MemeKeyboard/MemeKeyboard-BridgeHeader.h";
 			};
 			name = Release;
 		};
