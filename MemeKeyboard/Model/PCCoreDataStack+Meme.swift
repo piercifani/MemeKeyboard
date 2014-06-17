@@ -44,15 +44,15 @@ extension PCCoreDataStack {
         return memesFRC;
     }
     
-    func createMeme (name :String, url :String, tags :String[], completionBlock: MemeCreationHandler) {
+    func createMeme (name :String, url :String, tags :Meme[], completionBlock: MemeCreationHandler) {
         
-        let operationBlock: (NSManagedObjectContext) -> Void = {moc in
+        let operationBlock: (NSManagedObjectContext!) -> Void = {(moc: NSManagedObjectContext!) in
 
             let createdMeme = Meme(entity: self.memeEntityDescription(moc), insertIntoManagedObjectContext: moc)
             
         }
 
-        let completionBlock: (NSError) -> Void = {error in
+        let completionBlock: (NSError!) -> Void = {(error : NSError!) in
             //Handle error
         }
 
